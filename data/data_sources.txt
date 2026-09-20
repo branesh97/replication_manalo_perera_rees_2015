@@ -1,0 +1,57 @@
+Macroeconometrics assignment replication
+Paper: Exchange rate movements and the Australian economy (Manalo, Perera and Rees, 2015)
+Notes: Data used is quarterly frequency and coverage is 1985Q1 to 2026Q2, except VIX starts 1990Q1
+
+Data sources
+1. US real GDP
+Link: https://fred.stlouisfed.org/series/GDPC1
+Series: Real Gross Domestic Product, Billions of Chained 2017 Dollars, Quarterly, Seasonally Adjusted Annual Rate
+Source: FRED: Federal Reserve Economic Data, Federal Reserve Bank of St. Louis
+Any processing of source data prior to Matlab: none
+
+2. AU terms of trade
+Link: https://www.abs.gov.au/statistics/economy/international-trade/balance-payments-and-international-investment-position-australia/jun-2026
+Downloaded: "Table 5. Goods and services: chain volume measures and indexes - quarter"
+Series: Terms of Trade ; Goods and Services ; index numbers; seasonally adjusted
+Series ID: A3534885C
+Source: ABS
+Any processing of source data prior to Matlab: none
+
+3. AU real GDP
+Link: https://www.abs.gov.au/statistics/economy/national-accounts/australian-national-accounts-national-income-expenditure-and-product/jun-2026
+Downloaded: "Table 1. Key National Accounts Aggregates"
+Series: Gross domestic product: Chain volume measures ; Seasonally Adjusted; $ millions
+Series ID: A2304402X
+Source: ABS
+Any processing of source data prior to Matlab: none
+
+4. AU trimmed mean inflation
+Link: https://www.rba.gov.au/statistics/tables/
+Downloaded: "Consumer Price Inflation – G1"
+Series: Quarterly trimmed mean inflation  – excluding interest charges and tax changes; Consumer price index; Trimmed mean excluding interest charges and tax changes of 1999–2000; Quarterly change (in per cent); seasonally adjusted; percent
+Series ID: GCPIOCPMTMQP
+Source: RBA
+Any processing of source data prior to Matlab: none
+
+5. AU cash rate
+Link: 5.1: https://www.rba.gov.au/statistics/historical-data.html; 5.2 & 5.3: https://www.rba.gov.au/statistics/tables/
+Downloaded: 5.1: "Interest Rates and Yields: Money Market and Australian Government Securities 1976 to 1993 – originally published in Occasional Paper No. 10"; 5.2 & 5.3: "Interest Rates and Yields – Money Market – Monthly – F1.1"
+Series: 5.1: Official market 11am call rate weighted average, percent (1985Q1 to 1990Q3); 5.2: Cash Rate Target; monthly average; original; percent; (1990Q4 to 1998Q2); 5.3: Interbank Overnight Cash Rate; monthly average; original; percent (1998Q3 to 2026Q2)
+Series ID: 5.1: N/A; 5.2: FIRMMCRT; 5.3: FIRMMCRI
+Source: RBA
+Any processing of source data prior to Matlab: 5.1: averaged daily to get monthly and averaged monthly to get quarterly; 5.2 & 5.3: obtained quarterly data from averaging monthly data
+
+6. AU Real TWI
+Link: https://www.rba.gov.au/statistics/tables/
+Downloaded: Real Exchange Rate Measures – F15
+Series: Australian dollar trade-weighted exchange rate index, adjusted for relative consumer price levels; Original, quarter-average; Index, March 1995 = 100
+Series ID: FRERTWI
+Source: RBA
+Any processing of source data prior to Matlab: none
+
+7. CBOE Volatility Index (VIX)
+Link: https://www.cboe.com/tradable-products/vix/vix-historical-data
+Downloaded: "VIX Index data for 1990 to present (Updated Daily)"
+Series: Closes, Daily
+Source: CBOE
+Any processing of source data prior to Matlab: obtained quarterly data from averaging daily data
